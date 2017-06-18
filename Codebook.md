@@ -1,4 +1,4 @@
-# Getting-and-Cleaning-Data-Course-Project
+# Codebook describing the variables
 ### Variable Descriptions
 
 
