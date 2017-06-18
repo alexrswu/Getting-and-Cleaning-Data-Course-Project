@@ -1,6 +1,6 @@
-##Getting and Cleaning Data
+## Getting and Cleaning Data
 
-###Course Project
+### Course Project
 
 You should create one R script called run_analysis.R that does the following.
 
@@ -14,10 +14,10 @@ Download the data source and put in a folder on your local drive.
 Put run_analysis.R in the parent folder of UCI HAR Dataset, then set it as your working directory using setwd() function in RStudio.
 Run source("run_analysis.R"), then it will generate a new file tidy_data.txt in your working directory.
 
-###Dependencies
+### Dependencies
 run_analysis.R file will help you to install the dependencies automatically. It depends on reshape2 and data.table.
 
-###Introduction
+### Introduction
 
 The script run_analysis.R performs the 5 steps described in the course project's definition.
 
