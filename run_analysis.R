@@ -1,9 +1,8 @@
 ##Merges the training and the test sets to create one data set.
-setwd("./Coursera")
 library(data.table)
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download.file(url, "./data/smart.zip")
-unzip ("./data/smart.zip", exdir = "./data/")
+download.file(url, "./smart.zip")
+unzip ("./smart.zip", exdir = "./")
 f <- file.path(getwd(),"UCI HAR Dataset")
 list.files(f, recursive = TRUE)
 
