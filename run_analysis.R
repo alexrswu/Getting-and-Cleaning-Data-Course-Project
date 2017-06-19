@@ -41,6 +41,8 @@ dt <- merge(dt, dtActNames, by = "activityNum", all.x = TRUE)
 setkey(dt, subject, activityNum, activityName)
 ## reshape the data 
 ## Appropriately labels the data set with descriptive variable names.
+dt <- data.table(melt(dt, key(dt), variable.name="featureCode"))
+dt <- merge(dt, dtfeat[, list(featureNum, featureCode, featureName)], by="featureCode", all.x=TRUE)
 
 ## From the data set in step 4, creates a second, independent tidy data set 
 ##with the average of each variable for each activity and each subject.
